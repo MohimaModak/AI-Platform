@@ -1,0 +1,129 @@
+/* General styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fcfcfc;
+}
+
+.contact-subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #f7f5f5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.cta-button {
+  background-color: rgb(255, 255, 255); /* Bright color for the button */
+  color: #4a015c;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-subheading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    font-size: 0.95rem; /* Make inputs a bit smaller on smaller screens */
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Smaller button text for smaller screens */
+    padding: 12px 28px; /* Reduce button padding */
+  }
+
+  /* Ensure images are responsive and scale correctly */
+  .contact-illustration img {
+    width: 100%; /* Ensures the image scales down with screen size */
+  }
+}
+
+/* Stack the form and image on smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Ensure both the image and form take full width on smaller screens */
+  .contact-illustration,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between the form and image */
+  }
+
+  /* Button will be full width on smaller screens */
+  .cta-button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1rem; /* Adjust for smaller screens */
+  }
+
+  .contact-heading {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .cta-subheading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

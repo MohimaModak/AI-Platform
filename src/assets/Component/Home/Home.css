@@ -1,0 +1,30 @@
+.bg {
+    background: linear-gradient(to bottom, #480e72 0%, black);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #8A2BE2, #ee60ee, #ac3d94);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-weight: bold; */
+}
+
+.btn {
+    background: linear-gradient(to right, #8520e4, #e54ef3);
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.floating-image {
+    animation: floatUpDown 6s ease-in-out infinite;
+}
