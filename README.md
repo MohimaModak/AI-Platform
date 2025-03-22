@@ -76,6 +76,7 @@
 ## Credits And Attribution
 - **Icons:** [FlatIcon](https://www.flaticon.com/)
 - **Illustrations:** [Storyset](https://storyset.com/)
+- **Photos:** [[Pexels](https://pexels.com/)](https://www.pexels.com/)
 
 ---
 
