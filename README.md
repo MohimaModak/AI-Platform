@@ -108,5 +108,9 @@ src/
 For support and inquiries, contact Mohima Modak at:
 📧 Email: mmodak550@gmail.com
 
+<<<<<<< HEAD
 ## Contribution
 Feel free to fork the repository, submit issues, or contribute improvements!
+=======
+Thank you for choosing Health Care - React Template! 🚑💙
+>>>>>>> d9e7bb531fa2602d6fcada53a1d2e7ff0e3c4f13
