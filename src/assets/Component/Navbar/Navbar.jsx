@@ -14,15 +14,15 @@ export default function Navbar() {
   return (
     <div className="fixed w-full text-slate-100  font-medium top-0 z-50">
       <div className='flex justify-between items-center  mx-2 mt-2 md:hidden sm:block'>
-      <div className="md:hidden sm:block text-sm " onClick={toggleButton}>
-        <div className='menu w-8 h-1 rounded-full my-1'></div>
-        <div className='menu w-8 h-1 rounded-full my-1'></div>
-        <div className='menu w-8 h-1 rounded-full my-1'></div>
-      </div>
-      <div className='flex items-center gap-1 md:hidden sm:block'>
-        <img src={logo} className='w-10' />
-        <h1 className='gradient-text text-center text-xl font-bold'>AI Platform</h1>
-      </div>
+        <div className="md:hidden sm:block text-sm " onClick={toggleButton}>
+          <div className='menu w-8 h-1 rounded-full my-1'></div>
+          <div className='menu w-8 h-1 rounded-full my-1'></div>
+          <div className='menu w-8 h-1 rounded-full my-1'></div>
+        </div>
+        <div className='flex items-center gap-1 md:hidden sm:block'>
+          <img src={logo} className='w-10' />
+          <h1 className='gradient-text text-center text-xl font-bold'>AI Platform</h1>
+        </div>
       </div>
       <div className={`mobile-menu ${toggle ? "open" : ""}`}>
         <div className="navbar-links">
@@ -48,10 +48,13 @@ export default function Navbar() {
           <Link to="/Pricing" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
             Price
           </Link>
+          <div>
+            <a target='_blank' href="https://github.com/MohimaModak/AI-Platform">
+              <button className='text-xl inline-block text-center'>Github & Doc</button>
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Desktop Navbar */}
       <div className="flex justify-center items-center nav">
         <div className="hidden md:block">
           <nav className="navbar flex justify-center items-center">
@@ -80,6 +83,11 @@ export default function Navbar() {
               <Link to="/Pricing" smooth={true} duration={1000} className="text-xl mr-10">
                 Price
               </Link>
+              <div>
+                <a target='_blank' href="https://github.com/MohimaModak/AI-Platform">
+                  <button className='text-xl'>Github & Doc</button>
+                </a>
+              </div>
             </div>
           </nav>
         </div>
